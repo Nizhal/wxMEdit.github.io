@@ -51,7 +51,7 @@
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>Vorabversion</h2>
 
-<p><strong>Die letzte Vorabversion ist: 2.9.9.2</strong></p>
+<p><strong>Die letzte Vorabversion ist: 2.9.9.3</strong></p>
 
 <table>
 <thead><tr>
@@ -63,12 +63,12 @@
 <tr>
 <td>Windows</td>
 <td>i386/amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2-win32-bin.7z">wxMEdit-2.9.9.2-win32-bin.7z</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.3/wxMEdit-2.9.9.3-win32-bin.7z">wxMEdit-2.9.9.3-win32-bin.7z</a></td>
 </tr>
 <tr>
 <td>Andere</td>
 <td>andere</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.2/wxMEdit-2.9.9.2.tar.gz">wxMEdit-2.9.9.2.tar.gz</a></td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/2.9.9.3/wxMEdit-2.9.9.3.tar.gz">wxMEdit-2.9.9.3.tar.gz</a></td>
 </tr>
 </tbody>
 </table>
@@ -256,17 +256,23 @@
 <a name="change-log" class="anchor" href="#change-log"><span class="octicon octicon-link"></span></a>Changelog</h2>
 
 <h3>
-<a name="2992" class="anchor" href="#2992"><span class="octicon octicon-link"></span></a>2.9.9.2</h3>
+<a name="2993" class="anchor" href="#2993"><span class="octicon octicon-link"></span></a>2.9.9.3</h3>
 
 <ol>
 <li> neu: Anzeige/Druck von Lesezeichen unabhängig von der Zeilennummer</li>
+<li> neu: Option zum Einschließen von Zeilenumbrüchen bei Verwendung des Punktes in regulären Ausdrücken</li>
+<li> neu: Suchbenachrichtigung in der Statuszeile, wenn der Suchen-/Ersetzen-Dialog nicht sichtbar ist</li>
 <li> verbessert: Aussehen der Lesezeichen bei der Anzeige und beim Druck</li>
 <li> verbessert: Tabulator und Dateiende-Zeichen, bessere Unterscheidung zwischen Tabulator und Leerzeichen</li>
 <li> beseitigt: zu wenige Zeichen in einer Zeile bei einigen Wortumbruch-Einstellungen</li>
 <li> beseitigt: Breite der Elementenliste in den Einstellungen der Syntax-Hervorhebung wurden nicht aktualisiert bei Größenänderung</li>
+<li> beseitigt: keine Reaktion beim Zählen/Ersetzen...</li>
 <li> aktualisiert: Unicode block descriptions für Unicode 7.0 (benötigt ICU 54 oder höher)</li>
-<li> aktualisiert: Übersetzung Vereinfachtes Chinesisch</li>
-<li> andere kleine Änderungen und Fehlerbeseitigungen</li>
+<li>aktualisiert: Übersetzung Vereinfachtes Chinesisch</li>
+<li>neu: Übersetzung Deutsch von Ronny Steiner &lt;post[at]sirsteiner.de&gt;</li>
+<li>neu: Übersetzung Polnisch von Adam Massalski &lt;massaada[at]wp.pl&gt;</li>
+<li>aktualisiert: Übersetzung Japanisch von Tilt &lt;tiltstr[at]gmail.com&gt;</li>
+<li>andere kleine Änderungen und Fehlerbeseitigungen</li>
 </ol>
 <h3><a name="299" class="anchor" href="#299"><span class="octicon octicon-link"></span></a>2.9.9</h3>
 
@@ -276,11 +282,11 @@
 <li> neu: schließen von Dateien eines bestimmten Verzeichnisses</li>
 <li> neu: schließen links/rechts und alle außer der aktuellen Datei</li>
 <li> neu: Lesezeichen-Button in der Werkzeugleiste</li>
-<li> neu:  encoding aliases support for Find-in-Files Dialog and Options Dialog.</li>
+<li> neu: encoding aliases support for Find-in-Files Dialog and Options Dialog</li>
 <li> neu: speichern und wiederherstellen der normalen Fenstergröße für UNIX-ähnliche Betriebssysteme</li>
 <li> verbessert: Lokalisierung des Syntax Titels</li>
 <li> beseitigt: Absturz beim Speichern einer leeren Datei</li>
-<li>beseitigt: Absturz beim Öffnen des Suchen-Dialoges mit einer maximalen Zeilenlänge &lt; 100 und Suche-Text-Verlauf nicht leer.</li>
+<li>beseitigt: Absturz beim Öffnen des Suchen-Dialoges mit einer maximalen Zeilenlänge &lt; 100 und Suche-Text-Verlauf nicht leer</li>
 <li>beseitigt: Absturz beim Löschen des Suchen/Ersetzen-Verlaufes unmittelbar nach dem Start von wxMEdit</li>
 <li>beseitigt: Zurücksetzen des Syntax-Types beim Speichern, wenn manuell geändert</li>
 <li>aktualisiert: Übersetzungen von wxmedit.desktop</li>
@@ -289,28 +295,28 @@
 <li>aktualisiert: Übersetzung Spanisch von Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;</li>
 <li>aktualisiert: Übersetzung Japanisch von Tilt &lt;tiltstr[at]gmail.com&gt;</li>
 <li>andere kleine Änderungen und Fehlerbehebungen</li>
-</ol><!--<h3>
+</ol><h3>
 <a name="298" class="anchor" href="#298"><span class="octicon octicon-link"></span></a>2.9.8</h3>
 
 <ol>
-<li> added more choices for whether pasting as hex-string in hex-area when editing in hex-mode.</li>
-<li> added new feature: Paste with Overwriting in Hex Area.</li>
-<li> added more common used encoding aliases and show them in Encoding Conversion Dialog.</li>
-<li> added localization support when open homepage and downloads page.</li>
-<li> added Chinese translations support for zh_HK, zh_MO, zh_SG and zh.</li>
-<li> added an option to place configuration files into %APPDATA% directory under Windows.</li>
-<li> made default window size bigger.</li>
-<li> made manual update checking asynchronously as same as automatic update checking.</li>
-<li> improved encoding groups.</li>
-<li>fixed bugs detected by clang-analyzer.</li>
-<li>fixed memory leak warning when debugging finished under Windows.</li>
-<li>updated FreeBSD packaging that switched to pkgng via ports.</li>
-<li>updated Simplified Chinese translation.</li>
-<li>updated Traditional Chinese translation by Vincent_TW.</li>
-<li>updated Spanish translation by Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
-<li>updated Japanese translation by Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
-<li>other minor changes and bug fixes.</li>
-</ol>-->
+<li> neu: mehr Möglichkeiten beim Einfügen als Hex-String im Hex-Bereich beim Editieren im Hex-Modus</li>
+<li> neu: Einfügen mit Überschreiben im Hex-Bereich</li>
+<li> neu: mehr gebräuchliche Codierungsaliase und deren Anzeige im Codierung-umwandeln-Dialog</li>
+<li> neu: Unterstützung der Lokalisierung beim Öffnen der Homepage und Download-Seite</li>
+<li> neu: Chinesische Sprachunterstützung für zh_HK, zh_MO, zh_SG und zh</li>
+<li> neu: Option zum Abspeichern der Konfigurationsdateien in das %APPDATA%-Verzeichnis unter Windows</li>
+<li> geändert: Standard-Fenstergröße vergrößert</li>
+<li> made manual update checking asynchronously as same as automatic update checking</li>
+<li> verbessert: Codierungsgruppen</li>
+<li>beseitigt: Fehler, die von clang-analyzer entdeckt wurden</li>
+<li>beseitigt: Speicherleck-Warnung, wenn das Debuggen unter Windows beendet wurde</li>
+<li>aktualisiert: FreeBSD Paketerstellung, da die Umstellung auf pkgng über ports erfolgte</li>
+<li>aktualisiert: Übersetzung Vereinfachtes Chinesisch</li>
+<li>aktualisiert: Übersetzung Traditionelles Chinesisch von Vincent_TW</li>
+<li>aktualisiert: Übersetzung Spanisch von Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;</li>
+<li>Übersetzung Japanisch von Tilt &lt;tiltstr[at]gmail.com&gt;</li>
+<li>andere kleine Änderungen und Fehlerbehebungen</li>
+</ol>
 <p>Weitere Änderungen siehe <a target="_blank" href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">ChangeLog</a></p>
 
 <h2>
