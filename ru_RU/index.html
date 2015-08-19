@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- vim: set ambw=single sw=2 ts=2 sts=2 et: -->
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/architectsdaughter.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="../javascripts/html5.js"></script>
+    <![endif]-->
+
+    <title>wxMEdit - Кросс-платформенный Редактор Текста/Hex</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="inner">
+        <h1>wxMEdit</h1>
+        <h2>Кросс-платформенный Редактор Текста/Hex</h2>
+        <a href="https://github.com/hltj" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <aside id="sidebar">
+          <h2><a>Домашняя страница</a></h2>
+          <h2><a href="downloads.html">Загрузки</a></h2>
+          <h2><a href="credits.html">Соавторы</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/wiki/Home_ru_RU">Вики</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit">Исходный код</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/issues">Поддержка</a></h2>
+        </aside>
+
+        <section id="main-content">
+          <p><strong>
+            <!-- order by Language Name in English -->
+            <a href="../zh_CN/">简体中文</a> <!-- Chinese Simplified -->
+            <a href="../zh_TW/">正體中文</a> <!-- Chinese Traditional -->
+            <a href="../"      >English</a>  <!-- English -->
+            <a href="../de_DE/">Deutsch</a>  <!-- German -->
+            <a href="../ja_JP/">日本語</a>   <!-- Japanese -->
+                                             <!-- Russian -->
+            <a href="../es/"   >Español</a>  <!-- Spanish -->
+            <a href="helpl10n.html" style="float:right;">［Добавить/Обновить локализацию］</a> 
+          </strong></p>
+
+<h2>
+<a name="wxmedit" class="anchor" href="#wxmedit"><span class="octicon octicon-link"></span></a>wxMEdit</h2>
+
+<ul>
+<li>wxMEdit - кроссплатформенный Текст/Hex редактор , написанный на C++ &amp; wxWidgets.</li>
+<li>wxMEdit - это улучшенная версия редактора <a href="http://sourceforge.net/projects/madedit/">MadEdit</a>, работа над которым была прекращена.</li>
+<li>wxMEdit может редактировать файлы в режимах Текст/Колоночный/Шестнадцатеричный, и поддерживает множество полезных функций, например закладки, подсветку синтаксиса, преобразование в другие кодировки, переносы слов, подсчет слов и проверку обновлений.</li>
+<li>wxMEdit поддерживает все основные кодировки (UTF8/16/32, ISO-8859-x, CP125x, KOI8, GB18030, Big5, ...) не только в Текстовом/Колоночном режиме , но и в шестнадцатеричном (Hex) режиме.</li>
+<li>Целью этого проекта является предоставление постоянно поддерживаемого Текст/HEX редактора с исправлением ошибок, улучшением и оптимизацией.</li>
+</ul><h2>
+<a name="основные-изменения-после-версии-madedit-029" class="anchor" href="#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8-madedit-029&oq=%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8-madedit-029"><span class="octicon octicon-link"></span></a>Основные изменения после версии MadEdit 0.2.9</h2>
+
+<ul>
+<li>Добавлена автоматическая проверка обновлений.</li>
+<li>Добавлена поддержка закладок.</li>
+<li>Добавлено контекстное меню для каждой вкладки.</li>
+<li>Добавленная поддержка очистки истории.</li>
+<li>Добавлен выбор строки по тройному клику.</li>
+<li>Добавлена вставка упорядоченной последовательности.</li>
+<li>Добавлен синтаксис для файлов FreeBASIC.</li>
+<li>Добавлена возможность размещать файлы конфигурации в каталоге %APPDATA% на системе Windows.</li>
+<li>Улучшенная поддержка "Поиска/Замены".</li>
+<li>Улучшена поддержка Mac OS X.</li>
+<li>Улучшенная система интеграции под Windows.</li>
+<li>Улучшен результат обнаружения кодировок.</li>
+<li>Улучшенная поддержка редактирования в Hex режиме.
+
+<ul>
+<li>Добавлен более широкий выбор формата данных для копирования/вставки в области Hex.</li>
+<li>Добавлена новая функция: вставка с заменой в области Hex.</li>
+</ul>
+</li>
+<li>Улучшенная поддержка кодировок.
+
+<ul>
+<li>Добавлена группировка кодировок.</li>
+<li>Добавлены новые кодировки: ISO-8859-16, Windows-1258, KOI8-R, KOI8-U, GB18030, CP850, CP852, CP855, CP866, CP437 вариант для ASCII-Art.</li>
+</ul>
+</li>
+<li>Переработанные диалоги с Code::Blocks wxSmith.</li>
+<li>Обновленные переводы.
+
+<ul>
+<li>Добавлена Испанская локализация.</li>
+<li>Добавлена Русская локализация.</li>
+<li>Добавлена Немецкая локализация.</li>
+<li>Добавлена Польская локализация.</li>
+<li>Обновлены Упрощенная Китайская, Традиционная Китайская и Японская локализации.</li>
+</ul>
+</li>
+<li>Исправлены многие сбои и другие ошибки.</li>
+<li>Улучшенная сборка и упаковка конфигураций.</li>
+</ul><p>Смотрите <a href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog"> для подробностей изменений.</a>。</p>
+
+<h2>
+<a name="особенности" class="anchor" href="#%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8"><span class="octicon octicon-link"></span></a>Особенности</h2>
+
+<ul>
+<li>wxMEdit можно использовать на платформах MS-Windows, Linux, FreeBSD и Mac OS X.</li>
+<li>Автоматическая проверка наличия обновлений.</li>
+<li>Поддержка закладок.</li>
+<li>Редактирование файлов в текстовом, колоночном и шестнадцатеричном(Hex) режимах.</li>
+<li>В Hex-режиме, wxMEdit может открывать большие файлы, размер которых составляет до 32GB (INT_MAX*16).</li>
+<li>Пользователи могут изменять кодировку файлов во время выполнения как в веб-браузерах.</li>
+<li>Поддерживается множество кодировок, например:
+
+<ul>
+<li>Unicode (UTF-8, UTF-16/32 с прямым и обратным порядком байт);</li>
+<li>ISO-8859-1~16, Windows-1250~1258;</li>
+<li>KOI8-R/U;</li>
+<li>MS936(GBK*), GB18030, MS950(Big5*), Windows-31J(Shift-JIS*);</li>
+<li>прочие.</li>
+</ul>
+</li>
+<li>Поддерживаются не-BMP символы Юникода , такие как CJK Ext-B/C/D, Miao буквы, Математические буквенно-цифровые символы, Музыкальные символы, Emoji, и др.</li>
+<li>Если пользователи вводят символ, который не поддерживается для текущей кодировки, то этот символ будет преобразован в формат последовательности Юникода (только format code point поддерживается в настоящее время).</li>
+<li>Регулярные выражения для поиска &amp; замены.</li>
+<li>Открытие нескольких файлов в одном экземпляре.</li>
+<li>Поддержка подсветки синтаксиса для многих языков программирования:
+
+<ul>
+<li>awk, C/C++, CSS, diff/patch, D, DOS Batch Script, Flash ActionScript, HTML, Java, JavaScript, JSP, Lua, Pascal, PHP, Perl, Python, Ruby, UNIX Shell Script, x86 Assembly, XML, Fortran, TeX/LaTeX, Squirrel, C#, Visual Basic, ASP(VBScript), SQL, Verilog, VHDL, FreeBASIC.</li>
+</ul>
+</li>
+<li>wxMEdit может просматривать ASCII-Art файлы с соответствующим моноширинным шрифтом, например:
+
+<ul>
+<li>Courier New под Windows/Mac OS X;</li>
+<li>Andale Mono, Courier, Menlo, Monaco под Mac OS X;</li>
+<li>Console и Fixed на Unix-подобной ОС;</li>
+<li>DejaVu Sans Mono, Free Mono, Liberation Mono, и др.</li>
+</ul>
+</li>
+</ul>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53914281-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
