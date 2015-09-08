@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- vim: set ambw=single sw=2 ts=2 sts=2 et: -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/architectsdaughter.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="../javascripts/html5.js"></script>
+    <![endif]-->
+
+    <title>wxMEdit - Międzyplatformowy Tekst/Hex Edytor</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="inner">
+        <h1>wxMEdit</h1>
+        <h2>Międzyplatformowy Tekst/Hex Edytor</h2>
+        <a href="https://github.com/hltj" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <aside id="sidebar">
+          <h2><a>Strona główna</a></h2>
+          <h2><a href="downloads.html">Pobieranie</a></h2>
+          <h2><a href="credits.html">Podziękowania</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/wiki/Home_pl_PL">Wiki</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit">Kod źródłowy</a></h2>
+          <h2><a target="_blank" href="https://github.com/hltj/wxMEdit/issues">Wsparcie</a></h2>
+        </aside>
+
+        <section id="main-content">
+          <p><strong>
+            <!-- order by Language Name in English -->
+            <a href="../zh_CN/">简体中文</a> <!-- Chinese Simplified -->
+            <a href="../zh_TW/">正體中文</a> <!-- Chinese Traditional -->
+            <a href="../"      >English</a>  <!-- English -->
+            <a href="../de_DE/">Deutsch</a>  <!-- German -->
+            <a href="../ja_JP/">日本語</a>   <!-- Japanese -->
+                                             <!-- Polish -->
+            <a href="../ru_RU/">Русский</a>  <!-- Russian -->
+            <a href="../es/"   >Español</a>  <!-- Spanish -->
+            <a href="helpl10n.html" style="float:right;">[ Dodaj/Uaktualnij tłumaczenie ]</a> 
+          </strong></p>
+
+<h2>
+<a name="wxmedit" class="anchor" href="#wxmedit"><span class="octicon octicon-link"></span></a>wxMEdit</h2>
+
+<ul>
+<li>wxMEdit jest wieloplatformowym edytorem tekstu/heksadecymalnym napisanym w C++ z użyciem biblioteki wxWidgets.</li>
+<li>wxMEdit jest udoskonaloną wersją <a href="http://sourceforge.net/projects/madedit/">MadEdit</a>, którego rozwój został przerwany.</li>
+<li>wxMEdit może edytować pliki w trybach tekstowym/kolumnowym/heksadecymalnym, i obsługuje wiele przydatnych funkcji, np. zakładki, podświetlanie składni, kodowanie znaków, zawijanie wierszy, zliczanie wyrazów i kontrole aktualizacji. </li>
+<li>wxMEdit obsługuje kodowanie znaków (UTF8/16/32, ISO-8859-x, CP125x, KOI8, GB18030, Big5, ...) nie tylko w trybie tekstowym/kolumnowym, ale również w heksadecymalnym.</li>
+<li>Celem tego projektu jest zapewnienie stałego utrzymania edytora tekstu/heksadecymalnego z obsługą błedów, poprawek, ulepszeń i refactor.</li>
+</ul><h2>
+<a name="główne-zmiany-od-madedit-029" class="anchor" href="#g%C5%82%C3%B3wne-zmiany-od-madedit-029"><span class="octicon octicon-link"></span></a>Główne zmiany od MadEdit 0.2.9</h2>
+
+<ul>
+<li>Dodano automatyczne sprawdzanie aktualizacji.</li>
+<li>Dodano obsługę zakładek.</li>
+<li>Dodano pod prawym przyciskiem myszy menu kontekstowe dla każdej karty.</li>
+<li>Dodano czyszczenie historii.</li>
+<li>Dodano zaznaczanie linii trzykrotnym kliknięciem.</li>
+<li>Dodano wstawianie uporządkowanej sekwencji znaków.</li>
+<li>Dodano plik podświetlania składni dla FreeBASIC.</li>
+<li>Dodano opcję, aby umieścić pliki konfiguracyjne w katalogu %APPDATA% pod Windows.</li>
+<li>Poprawiono obsługę "Znajdź/Zamień".</li>
+<li>Poprawiono obsługę Mac OS X.</li>
+<li>Ulepszono integrację z systemem pod Windows.</li>
+<li>Poprawiono wynik wykrywania kodowania.</li>
+<li>Poprawiono obsługę edycji w trybie heksadecymalnym.
+
+<ul>
+<li>Dopdano więcej możliwości dla formatu kopiowanych/wklejanych danych w obszarze heksadecymalnym.</li>
+<li>Dodano nowe funkcię: Wklej nadpisując w obszarze heksadecymalnym.</li>
+</ul>
+</li>
+<li>Poprawiono wsparcie kodowania.
+
+<ul>
+<li>Dodano zgrupowanie kodowania.</li>
+<li>Dodano nowe kodowanie znaków: ISO-8859-16, Windows-1258, KOI8-R, KOI8-U, GB18030, CP850, CP852, CP855, CP866, CP437 Variant for ASCII-Art.</li>
+</ul>
+</li>
+<li>Przeprojektowano dialogi z Code::Blocks wxSmith.</li>
+<li>Uaktualniono tłumaczenia.
+
+<ul>
+<li>Dodano tłumaczenie na hiszpański.</li>
+<li>Dodano tłumaczenie na rosyjski.</li>
+<li>Dodano tłumaczenie na niemiecki.</li>
+<li>Dodano tłumaczenie na polski.</li>
+<li>Uaktualniono tłumaczenia dla chińskiego uproszczonego, chińskiego tradycyjnego i japońskiego.</li>
+</ul>
+</li>
+<li>Naprawiono wiele przyczyn awarii i innych błędów.</li>
+<li>Ulepszono budowę i pakowanie konfiguracji.</li>
+</ul><p>Zobacz <a href="/hltj/wxMEdit/blob/master/ChangeLog">ChangeLog</a> więcej zmian.</p>
+
+<h2>
+<a name="opis" class="anchor" href="#opis"><span class="octicon octicon-link"></span></a>Opis</h2>
+
+<ul>
+<li>wxMEdit może być uruchamiany pod platformami MS-Windows, Linux, FreeBSD i Mac OS X.</li>
+<li>Automatycznie sprawdza aktualizacje.</li>
+<li>Obsługa zakładek.</li>
+<li>Edycja plików w trybie tekstowym, kolumnowym i heksadecymalnym.</li>
+<li>W trybie heksadecymalnym wxMEdit może otwierać duże pliki w rozmiarze do 32GB (INT_MAX*16).</li>
+<li>Użytkownicy mogą zmienić kodowanie plików w czasie rzeczywistym tak jak przeglądarkach internetowych.</li>
+<li>Obsługuje wiele kodowań znaków, np:
+
+<ul>
+<li>Unicode (UTF-8, UTF-16/32 z Little lub Big Endian);</li>
+<li>ISO-8859-1~16, Windows-1250~1258;</li>
+<li>KOI8-R/U;</li>
+<li>MS936(GBK*), GB18030, MS950(Big5*), Windows-31J(Shift-JIS*);</li>
+<li>itd.</li>
+</ul>
+</li>
+<li>Obsługuje nie bitmapowe znaki Unicode, takie jak CJK Ext-B/C/D, litery Miao, symbole matematyczne, symbole muzyczne, Emoji itp, symbole matematyczne i cyfry, symbole muzyczne, Emoji itp.</li>
+<li>Jeśli znak wprowadzony przez użytkownika nie jest obsługiwany przez domyślne kodowanie, to będzie on przekonwertowany do formatu Unicode escape(jedynie format kodowania w punkt obsługiwany obecnie)</li>
+<li>Wyrażenia regularne dla Wyszukaj i Zamień.</li>
+<li>Otwiera wiele plików w jednej instancji.</li>
+<li>Obsługuje podswietlanie składni dla wielu języków programowania:
+
+<ul>
+<li>awk, C/C++, CSS, diff/patch, D, DOS Batch Script, Flash ActionScript, HTML, Java, JavaScript, JSP, Lua, Pascal, PHP, Perl, Python, Ruby, UNIX Shell Script, x86 Assembly, XML, Fortran, TeX/LaTeX, Squirrel, C#, Visual Basic, ASP(VBScript), SQL, Verilog, VHDL, FreeBASIC.</li>
+</ul>
+</li>
+<li>wxMEdit może wyświetlać pliki ASCII-Art z odpowiednimi czcionkami stałej szerokości, np:
+
+<ul>
+<li>Courier New bajo Windows/Mac OS X;</li>
+<li>Andale Mono, Courier, Menlo, Monaco bajo Mac OS X;</li>
+<li>Consola and Fijo bajo Sistemas Operativos como Unix; </li>
+<li>DejaVu Sans Mono, Free Mono, Liberation Mono, itp.</li>
+</ul>
+</li>
+</ul>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53914281-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
