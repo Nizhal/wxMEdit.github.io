@@ -1,4 +1,4 @@
 wxmedit.github.io
 =================
 
-Home page of wxMEdit.
+Website of wxMEdit: https://wxmedit.github.io/ .
