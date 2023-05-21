@@ -53,12 +53,12 @@
             <a href="../ru_RU/downloads.html">Русский</a>  <!-- Russian -->
             <span>Español</span>                           <!-- Spanish -->
           </strong></p>
-<!--
+
 <h2>
 <a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>Version preliminar</h2>
 
 <p><strong>La versión preliminar más reciente es: 
-3.1.2
+3.2RC (3.1.0.90)
  .</strong></p>
 
 <table>
@@ -69,18 +69,43 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>Windows / ReactOS</td>
+<td>Windows 7, 8, 10, 11</td>
+<td>amd64</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-win64-bin.7z">wxMEdit-3.1.0.90-win64-bin.7z</a><br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-win64-bin.zip">wxMEdit-3.1.0.90-win64-bin.zip</a>
+</td>
+</tr>
+<tr>
+<td>Windows 7, 8, 10, 11</td>
+<td>i386</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-win32-bin.7z">wxMEdit-3.1.0.90-win32-bin.7z</a><br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-win32-bin.zip">wxMEdit-3.1.0.90-win32-bin.zip</a>
+</td>
+</tr>
+<tr>
+<td>Windows Xp, Vista / ReactOS</td>
 <td>i386/amd64</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.2/wxMEdit-3.1.2-win32-bin.7z">wxMEdit-3.1.2-win32-bin.7z</a></td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-win32-bin-xp.7z">wxMEdit-3.1.0.90-win32-bin-xp.7z</a><br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-win32-bin-xp.zip">wxMEdit-3.1.0.90-win32-bin-xp.zip</a>
+</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td>cualquiera</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90.tar.gz">wxMEdit-3.1.0.90.tar.gz</a> 
+y seguir <a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">aquí</a></td>
 </tr>
 <tr>
 <td>Otros</td>
-<td>Otros</td>
-<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.2/wxMEdit-3.1.2.tar.gz">wxMEdit-3.1.2.tar.gz</a></td>
+<td>cualquiera</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90.tar.gz">wxMEdit-3.1.0.90.tar.gz</a></td>
 </tr>
 </tbody>
 </table>
--->
+
 <h2>
 <a name="ultimo-lanzamiento" class="anchor" href="#ultimo-lanzamiento"><span class="octicon octicon-link"></span></a>Ultimo Lanzamiento</h2>
 
@@ -228,8 +253,8 @@
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.1/wxmedit-3.1-amd64-icu55.txz">wxmedit-3.1-amd64-icu55.txz</a></td>
 </tr>
 <tr>
-<td>Mac OS X</td>
-<td>i386/amd64</td>
+<td>macOS</td>
+<td>cualquiera</td>
 <td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.1/wxMEdit-3.1_OSXFIX.tar.gz">wxMEdit-3.1_OSXFIX.tar.gz</a> 
 y seguir <a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">aquí</a></td>
 </tr>
@@ -274,9 +299,28 @@ y seguir <a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">aqu
 </table><h2>
 <a name="hitorial-de-cambios" class="anchor" href="#hitorial-de-cambios"><span class="octicon octicon-link"></span></a>Hitorial de cambios</h2>
 
-<h3>
-<a name="31" class="anchor" href="#31"><span class="octicon octicon-link"></span></a>3.1</h3>
+<h3><a name="32RC" class="anchor" href="#32RC"><span class="octicon octicon-link"></span></a>3.2RC (3.1.0.90)</h3><ol>
+<li> added new feature: show file size in human readable format.</li>
+<li> added a option that always use certain encoding to open files.</li>
+<li> added GTK+ 3 and Wayland support.</li>
+<li> added High DPI supoport under Windows.</li>
+<li> redisigned the icons by jerome KASPER &lt;neon.king.fr[at]gmail.com&gt;.</li>
+<li> updated Unicode block descriptions for Unicode 15.0 (require ICU 72 or higher).</li>
+<li> fixed crash in text mode when a line exceed the limit of line length.</li>
+<li> fixed crash when pressing OK button in "About wxMEdit" window.</li>
+<li> fixed not responding when warping by window with text containing some tab characters.</li>
+<li>fixed broken triple click behavior in wxMEdit 3.1.</li>
+<li>fixed that the height of Information Window in MadEdit/wxMEdit (built with wxMSW-2.8) always reduce by 4.</li>
+<li>fixed fonts and encodings not restored after restart.</li>
+<li>fixed that cannot type characters via AltGr key.</li>
+<li>fixed cursor and selection rendering under Linux.</li>
+<li>fixed that IME candidate window doesn't follow the caret under Windows 10.</li>
+<li>added French translation by jerome KASPER &lt;neon.king.fr[at]gmail.com&gt;.</li>
+<li>updated Simplified Chinese translation.</li>
+<li>other minor changes and bug fixes.</li>
+</ol>
 
+<h3><a name="31" class="anchor" href="#31"><span class="octicon octicon-link"></span></a>3.1</h3>
 <ol>
 <li> Añadida nueva característica matadora: Límite de palabra con caracteres Chino/Japonés/Tailandés/Lao/Khmer y Birmano etc.</li>
 <li> Añadida nueva característica matadora: Ajuste de línea cumple con el estándar Unicode® Anexo #14: Algoritmo de fin de línea Unicode.</li>
@@ -298,9 +342,9 @@ y seguir <a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">aqu
 <li>actualizada traducción al Chino Tradicional por Vincent_TW.</li>
 <li>actualizada traducción al Ruso por Станислав Будинов &lt;stabud[at]yandex.ru&gt;.</li>
 <li>otros cambios menores y correcciones de errores.</li>
-</ol><h3>
-<a name="30" class="anchor" href="#30"><span class="octicon octicon-link"></span></a>3.0</h3>
+</ol>
 
+<h3><a name="30" class="anchor" href="#30"><span class="octicon octicon-link"></span></a>3.0</h3>
 <ol>
 <li> added new options to display/print bookmark independent of line number.</li>
 <li> added a option whether enable dot matching new-line in regular expression.</li>
@@ -318,29 +362,9 @@ y seguir <a target="_blank" href="https://github.com/hltj/wxMEdit/issues/57">aqu
 <li>actualizada traducción al Japonés por Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
 <li>actualizada traducción al Español por Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
 <li>otros cambios menores y correcciones de errores.</li>
-</ol><h3>
-<a name="299" class="anchor" href="#299"><span class="octicon octicon-link"></span></a>2.9.9</h3>
+</ol>
 
-<ol>
-<li> añadido menú contextual del botón derecho para cada pestaña.</li>
-<li> añadida más información para el Diálogo Contar Palabras.</li>
-<li> añadida nueva característica: cerrar archivos en la carpeta dada.</li>
-<li> añadida nuevas características: cerrar a la izquierda/derecha, cerrar de todo pero este.</li>
-<li> añadido botones de marcadores a la barra de herramientas.</li>
-<li> añadido soporte de alias de codificación para los diálogos Buscar-en-Archivos y Opciones.</li>
-<li> añadido guardar siempre &amp; restaurar tamaño de ventana normalizado soporte para sistemas como UNIX.</li>
-<li> mejorada localización por título de sintaxis.</li>
-<li> corregidoel fallo al guardar un archivo vacío.</li>
-<li>corregido fallo al abrir Diálogo Buscar con una longitud de línea máxima &lt; 100 y buscar-texto historial no vacío.</li>
-<li>corregido fallo cuando se purgaba historial buscar/reemplazar-texto inmediamente despues de iniciar wxMEdit.</li>
-<li>corregido tipo de sintaxis que siempre se reinicia al guardarse, incluso cambiado manualmente.</li>
-<li>traducciones actualizadas de wxmedit.desktop.</li>
-<li>actualizada traducción al Chino Simplificado.</li>
-<li>actualizada traducción al Chino Tradicional por Vincent_TW.</li>
-<li>actualizada traducción al Español por Carlos Sánchez &lt;carlos1994sanchez[at]gmail.com&gt;.</li>
-<li>actualizada traducción al Japonés por Tilt &lt;tiltstr[at]gmail.com&gt;.</li>
-<li>otros cambios menores y correcciones de errores.</li>
-</ol><p>Ver <a target="_blank" href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">ChangeLog</a> para más cambios.</p>
+<p>Ver <a target="_blank" href="https://github.com/hltj/wxMEdit/blob/master/ChangeLog">ChangeLog</a> para más cambios.</p>
 
 <h2>
 <a name="otras-descargas" class="anchor" href="#otras-descargas"><span class="octicon octicon-link"></span></a>Otras Descargas</h2>
