@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- vim: set ambw=single sw=2 ts=2 sts=2 et: -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <script type="text/javascript">
+      if (location.search) {
+        var s = location.search;
+        var l = s.substr(1);
+        if (l.substr(0, 3) == 'hl=')
+          l = l.substr(3);
+        if (l.match(/^es_[A-Z][A-Z]/))
+          l = 'es';
+        var l10n = {'zh_CN':'zh_CN', 'zh_SG':'zh_CN', 'zh':'zh_CN', 'zh_TW':'zh_TW', 'zh_HK':'zh_TW', 
+                    'zh_MO':'zh_TW', 'ja_JP':'ja_JP', 'ja':'ja_JP', 'es':'es', 'de_DE':'de_DE', 
+                    'pl_PL':'pl_PL', 'ru_RU':'ru_RU', 'ta':'ta'}[l] || '';
+        location = l10n + location.pathname + location.hash;
+      }
+    </script>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/architectsdaughter.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="javascripts/html5.js"></script>
+    <![endif]-->
+
+    <title>சாஃபிதிருத்தி -ஒரு குறுக்கு மேடை உரை/பதினறுமஎண் திருத்தி</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="inner">
+        <h1>சாஃபிதிருத்தி</h1>
+        <h2>ஒரு குறுக்கு மேடை உரை/பதினறுமஎண் திருத்தி</h2>
+        <a target="_blank" href="https://github.com/hltj" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <aside id="sidebar">
+          <h2><a>வீடு</a></h2>
+          <h2><a href="downloads.html">பதிவிறக்கங்கள்</a></h2>
+          <h2><a href="credits.html">கடன்கள்</a></h2>
+          <h2><a target="_blank" href="https://github.com/wxMEdit/wxMEdit/wiki">ஆவணம்</a></h2>
+          <h2><a target="_blank" href="https://github.com/wxMEdit/wxMEdit">Code</a></h2>
+          <h2><a target="_blank" href="https://github.com/wxMEdit/wxMEdit/issues">ஆதரவு</a></h2>
+        </aside>
+
+        <section id="main-content">
+          <p><strong>
+            <!-- order by Language Name in English -->
+            <a href="zh_CN/">简体中文</a> <!-- Chinese Simplified -->
+            <a href="zh_TW/">正體中文</a> <!-- Chinese Traditional -->
+            <span>English</span>          <!-- English -->
+            <a href="de_DE/">Deutsch</a>  <!-- German -->
+            <a href="ja_JP/">日本語</a>   <!-- Japanese -->
+            <a href="pl_PL/">Polski</a>   <!-- Polish -->
+            <a href="ru_RU/">Русский</a>  <!-- Russian -->
+            <a href="es/">Español</a> 	 <!-- Spanish -->
+			<a href="ta/">தமிழ்</a> 		 <!-- Tamil -->
+            <a href="helpl10n.html" style="float:right;">[ மொழிபெயர்ப்பைச் சேர்/புதுப்பி ]</a> 
+          </strong></p>
+
+<h2>
+<a name="wxmedit" class="anchor" href="#wxmedit"><span class="octicon octicon-link"></span></a>சாஃபிதிருத்தி</h2>
+
+<ul>
+<li>சாஃபிதிருத்தி என்பது ஒரு குறுக்கு மேடை உரை/பதினறுமஎண் திருத்தி என்பது C++ &amp; wxWidgets.</li>
+<li>சாஃபிதிருத்தி என்பது <a href="http://sourceforge.net/projects/madedit/">பித்துதிருத்தி</a> இன் மேம்படுத்தப்பட்ட பதிப்பாகும், இது நிறுத்தப்பட்டது.</li>
+<li>சாஃபிதிருத்தி உரை/நெடுவரிசை/ஹெக்ஸ் முறைகளில் கோப்புகளைத் திருத்த முடியும், மேலும் பல பயனுள்ள செயல்பாடுகளை ஆதரிக்கிறது, எ.கா. புக்மார்க், தொடரியல் சிறப்பம்சங்கள், குறியாக்கங்கள், வேர்ட் ரேப், வேர்ட்கவுண்ட் மற்றும் புதுப்பிப்புகள் சரிபார்த்தல். </li>
+<li>சாஃபிதிருத்தி ஆதரவு பொதுவான குறியாக்கங்கள் (UTF8/16/32, ISO-8859-x, CP125x, KOI8, GB18030, Big5, ...) உரை/நெடுவரிசை முறைகளில் மட்டுமின்றி ஹெக்ஸ் பயன்முறையிலும் உள்ளது.</li>
+<li>பிழைத் திருத்தங்கள், மேம்பாடுகள் மற்றும் மறுசீரமைப்புடன் தொடர்ந்து பராமரிக்கப்படும் உரை/ஹெக்ஸ் எடிட்டரை வழங்குவதே இந்தத் திட்டத்தின் நோக்கமாகும்.</li>
+</ul><h2>
+<a name="mainly-changes-from-madedit-029" class="anchor" href="#mainly-changes-from-madedit-029"><span class="octicon octicon-link"></span></a>Mainly Changes from பித்துதிருத்தி 0.2.9</h2>
+
+<ul>
+<li>புதிய<strong>கொல்லும் நற்பொருத்தங்கள் சேர்க்கப்பட்டன</strong>:
+<ul>
+<li>BOM ஆதரவு for GB18030.</li>
+<li>Inserting ordered sequence.</li>
+<li>Word boundary with Chinese/Japanese/Thai/Lao/Khmer and Burmese characters etc.</li>
+<li>Word-wrap meet the ஒருங்குறி® Standard Annex #14: ஒருங்குறி Line Breaking Algorithm.</li>
+</ul>
+</li>
+<li>Added automatically checking for updates.</li>
+<li>Added bookmark ஆதரவு.</li>
+<li>Added right-click context menu for each tab.</li>
+<li>Added purging histories ஆதரவு.</li>
+<li>Added selecting a line by triple click.</li>
+<li>Added FreeBASIC syntax file.</li>
+<li>Added an option to place configuration files into %APPDATA% directory under Windows.</li>
+<li>Improved ஆதரவு for "Find / Replace".</li>
+<li>Improved Mac OS X ஆதரவு.</li>
+<li>Improved system integration under Windows.</li>
+<li>Improved encoding detection result.</li>
+<li>Improved Hex editing ஆதரவு.
+
+<ul>
+<li>Added more choices for data format copying/pasting in Hex Area.</li>
+<li>Added new feature: Paste with Overwriting in Hex Area.</li>
+</ul>
+</li>
+<li>Improved encoding ஆதரவு.
+
+<ul>
+<li>Added grouping of encodings.</li>
+<li>Added new encodings: ISO-8859-16, Windows-1258, KOI8-R, KOI8-U, GB18030, CP850, CP852, CP855, CP866, CP437 Variant for ASCII-Art.</li>
+</ul>
+</li>
+<li>Redesigned dialogs with Code::Blocks wxSmith.</li>
+<li>Updated translations.
+
+<ul>
+<li>Added Spanish translation.</li>
+<li>Added Russian translation.</li>
+<li>Added German translation.</li>
+<li>Added Polish translation.</li>
+<li>Updated Simplified Chinese, Traditional Chinese and Japanese translations.</li>
+</ul>
+</li>
+<li>Fixed many crashes and other bugs.</li>
+<li>Improved build and packaging configurations.</li>
+</ul><p>See <a target="_blank" href="https://github.com/wxMEdit/wxMEdit/blob/master/ChangeLog">ChangeLog</a> for more changes.</p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>சாஃபிதிருத்தி can run under Windows/ReactOS/Wine, Linux, BSDes, macOS, OpenIndiana, other Unix-like OSes and Haiku OS.</li>
+<li>Checks for updates automatically.</li>
+<li>Supports bookmark.</li>
+<li>Edits files in Text, Column and Hex modes.</li>
+<li>In Hex-Mode, சாஃபிதிருத்தி can open large files which size is up to 32GB (INT_MAX*16).</li>
+<li>Users can change the encoding of files at runtime like Web-Browsers.</li>
+<li>Supports many encodings, e.g.:
+
+<ul>
+<li>ஒருங்குறி (UTF-8, UTF-16/32 with Little or Big Endian);</li>
+<li>ISO-8859-1~16, Windows-1250~1258;</li>
+<li>KOI8-R/U;</li>
+<li>MS936(GBK*), GB18030, MS950(Big5*), Windows-31J(Shift-JIS*);</li>
+<li>etc.</li>
+</ul>
+</li>
+<li>Supports non-BMP ஒருங்குறி Characters Such as CJK Ext-B/C/D/E, Miao Letters, Mathematical Alphanumeric Symbols, Musical Symbols, Emoji, etc.</li>
+<li>If users input a character that is not supported by current encoding, this character will be converted to ஒருங்குறி escape format (only code point format ஆதரவுed currently).</li>
+<li>Regular Expression search &amp; replace.</li>
+<li>Opens multiple files on single instance.</li>
+<li>ஆதரவுs syntax-highlighting of many programming languages:
+
+<ul>
+<li>awk, C/C++, CSS, diff/patch, D, DOS Batch Script, Flash ActionScript, HTML, Java, JavaScript, JSP, Lua, Pascal, PHP, Perl, Python, Ruby, UNIX Shell Script, x86 Assembly, XML, Fortran, TeX/LaTeX, Squirrel, C#, Visual Basic, ASP(VBScript), SQL, Verilog, VHDL, FreeBASIC.</li>
+</ul>
+</li>
+<li>சாஃபிதிருத்தி can view ASCII-Art files with appropriate monospace font e.g.:
+
+<ul>
+<li>Courier New under Windows/Mac OS X;</li>
+<li>Andale Mono, Courier, Menlo, Monaco under Mac OS X;</li>
+<li>Console and Fixed under Unix-like OS; </li>
+<li>DejaVu Sans Mono, Free Mono, Liberation Mono, etc.</li>
+</ul>
+</li>
+</ul>
+        <div id="footer"><p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a> with modification.</p></div>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53914281-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
