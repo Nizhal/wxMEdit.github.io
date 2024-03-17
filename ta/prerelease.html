@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- vim: set sw=2 ts=2 sts=2 et: -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+      if (location.search) {
+        var s = location.search;
+        var l = s.substr(1);
+        if (l.substr(0, 3) == 'hl=')
+          l = l.substr(3);
+        if (l.match(/^es_[A-Z][A-Z]/))
+          l = 'es';
+        var l10n = {'zh_CN':'zh_CN', 'zh_SG':'zh_CN', 'zh':'zh_CN', 'zh_TW':'zh_TW', 'zh_HK':'zh_TW', 
+                    'zh_MO':'zh_TW', 'ja_JP':'ja_JP', 'ja':'ja_JP', 'es':'es', 'de_DE':'de_DE', 
+                    'pl_PL':'pl_PL', 'ru_RU':'ru_RU'}[l] || '';
+        location = l10n + "/downloads.html#prerelease";
+      }
+      else {
+        location = "downloads.html#prerelease";
+      }
+    </script>  
+    <meta http-equiv="refresh" content="0; url=downloads.html#prerelease" />
+    <title>சாஃபிதிருத்தி -  ஒரு குறுக்கு மேடை உரை/பதினறுமஎண் திருத்தி</title>
+  </head>
+  <body>
+    <h3>சாஃபிதிருத்தி பதிவிறக்கங்கள்</h3>
+    <p>பதிவிறக்கங்களுக்கு உங்களைத் திருப்பி விடுகிறது.</p>
+    <p>நீங்கள் திருப்பிவிடப்படவில்லை எனில், தயவுசெய்து <a href="downloads.html#prerelease">இங்கே</a> சொடுக்கவும்.</p>
+  </body>
+</html>

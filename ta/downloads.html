@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!-- vim: set ambw=single sw=2 ts=2 sts=2 et: -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <script type="text/javascript">
+      if (location.search) {
+        var s = location.search;
+        var l = s.substr(1);
+        if (l.substr(0, 3) == 'hl=')
+          l = l.substr(3);
+        if (l.match(/^es_[A-Z][A-Z]/))
+          l = 'es';
+        var l10n = {'zh_CN':'zh_CN', 'zh_SG':'zh_CN', 'zh':'zh_CN', 'zh_TW':'zh_TW', 'zh_HK':'zh_TW', 
+                    'zh_MO':'zh_TW', 'ja_JP':'ja_JP', 'ja':'ja_JP', 'es':'es', 'de_DE':'de_DE', 
+                    'pl_PL':'pl_PL', 'ru_RU':'ru_RU', 'ta':'ta'}[l] || '';
+        location = l10n + location.pathname + location.hash;
+      }
+    </script>
+    <style>
+      .del {text-decoration:line-through}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/architectsdaughter.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="../javascripts/html5.js"></script>
+    <![endif]-->
+
+    <title>சாஃபிதிருத்தி -ஒரு குறுக்கு மேடை உரை/பதினறுமஎண் திருத்தி</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="inner">
+        <h1>சாஃபிதிருத்தி</h1>
+        <h2>பதிவிறக்கங்கள்</h2>
+        <a target="_blank" href="https://github.com/hltj" class="button">அறிவிலி <small>மையத்தில் என்னை பின் தொடருங்கள்</small></a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <aside id="sidebar">
+          <h2><a href="./index.html">வீடு</a></h2>
+          <h2><a>பதிவிறக்கங்கள்</a></h2>
+          <h2><a href="credits.html">கடன்கள்</a></h2>
+          <h2><a target="_blank" href="https://github.com/wxMEdit/wxMEdit/wiki">ஆவணம்</a></h2>
+          <h2><a target="_blank" href="https://github.com/wxMEdit/wxMEdit">குறியீடு</a></h2>
+          <h2><a target="_blank" href="https://github.com/wxMEdit/wxMEdit/issues">ஆதரவு</a></h2>
+        </aside>
+
+        <section id="main-content">
+          <p><strong>
+            <!-- ஆங்கிலத்தில் மொழி பெயர் மூலம் வரிசை  -->
+            <a href="../zh_CN/downloads.html">简体中文</a> <!-- Chinese Simplified -->
+            <a href="../zh_TW/downloads.html">正體中文</a> <!-- Chinese Traditional -->
+            <a href="../downloads.html">ஆங்கிலம்</a>                        <!-- ஆங்கிலம் -->
+            <a href="../de_DE/downloads.html">Deutsch</a>  <!-- German -->
+            <a href="../ja_JP/downloads.html">日本語</a>   <!-- Japanese -->
+            <a href="../pl_PL/downloads.html">Polski</a>   <!-- Polish -->
+            <a href="../ru_RU/downloads.html">Русский</a>  <!-- Russian -->
+            <a href="../es/downloads.html">Español</a>  <!-- Spanish -->
+			<span>தமிழ்</span>	  <!-- Tamil -->
+            <a href="helpl10n.html" style="float:right;">[ மொழிபெயர்ப்பைச் சேர்/புதுப்பி ]</a> 
+          </strong></p>
+<!--
+<h2>
+<a name="prerelease" class="anchor" href="#prerelease"><span class="octicon octicon-link"></span></a>Prerelease</h2>
+
+<p><strong>The lastest prerelease is: 
+3.2RC (3.1.0.90)
+ .</strong></p>
+
+<table>
+<thead><tr>
+<th>Operating System</th>
+<th>Architecture</th>
+<th>Package</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>சாளரங்கள் 7 அல்லது மேற்பட்டது / வைன்</td>
+<td>எஎம்டி64</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-3-win64-bin.7z">சாஃபிதிருத்தி-3.1.0.90-3-சாளர64-இரும.7ஃ</a> (12.1 மெபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-3-win64-bin.zip">சாஃபிதிருத்தி-3.1.0.90-3-சாளர64-இரும.சுருக்கு</a> (19.4 மெபை)
+</td>
+</tr>
+<tr>
+<td>சாளரங்கள் எஃசுபி அல்லது மேற்பட்டது / வைன்</td>
+<td>ஐ386</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-3-win32-bin.7z">சாஃபிதிருத்தி-3.1.0.90-3-சாளர32-இரும.7ஃ</a> (11.7 மெபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-3-win32-bin.zip">சாஃபிதிருத்தி-3.1.0.90-3-சாளர32-இரும.சுருக்கு</a> (18.9 மெபை)
+</td>
+</tr>
+<tr>
+<td>மறுசெயல்இமு</td>
+<td>ஐ386 / amd64</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-3-win32-bin-ros.7z">சாஃபிதிருத்தி-3.1.0.90-3-சாளர32-bin-ros.7z</a> (9.82 மெபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-3-win32-bin-ros.zip">சாஃபிதிருத்தி-3.1.0.90-3-சாளர32-bin-ros.zip</a> (15.8 மெபை)
+</td>
+</tr>
+<tr>
+<td>மேக்முஇ</td>
+<td>எந்த</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-3.tar.gz">சாஃபிதிருத்தி-3.1.0.90-3.tar.gz</a> (3.01 மெபை)
+and follow <a target="_blank" href="https://github.com/wxMEdit/wxMEdit/issues/57#issuecomment-31417588">here</a></td>
+</tr>
+<tr>
+<td>Other</td>
+<td>எந்த</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/prerelease/3.1.0.90/wxMEdit-3.1.0.90-3.tar.gz">சாஃபிதிருத்தி-3.1.0.90-3.tar.gz</a> (3.01 மெபை)</td>
+</tr>
+</tbody>
+</table>
+-->
+<h2>
+<a name="latest-release" class="anchor" href="#latest-release"><span class="octicon octicon-link"></span></a>அண்மைகால வெளியீடு</h2>
+
+<p><strong>தற்போதைய பதிப்பு: 
+3.2
+ .</strong></p>
+
+<table>
+<thead><tr>
+<th>இயக்க முறைமை</th>
+<th>கட்டமைப்பு</th>
+<th>தொகுப்பு</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>சாளரங்கள் 7 அல்லது அதற்கு மேற்பட்டது / வைன்</td>
+<td>எஎம்டி64</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxMEdit-3.2-win64-bin.7z">சாஃபிதிருத்தி-3.2-சாளர64-இரும.7ஃ</a> (12.8 மெபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxMEdit-3.2-win64-bin.zip">சாஃபிதிருத்தி-சாளர64-இரும.சுருக்கு</a> (20.7 மெபை)
+</td>
+</tr>
+<tr>
+<td>சாளரங்கள் எஃசுபி அல்லது அதற்கு மேற்பட்டது / வைன்</td>
+<td>ஐ386</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxMEdit-3.2-win32-bin.7z">சாஃபிதிருத்தி-3.2-சாளர32-இரும.7ஃ</a> (11.6 மெபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxMEdit-3.2-win32-bin.zip">சாஃபிதிருத்தி-3.2-சாளர32-இரும.சுருக்கு</a> (18.7 மெபை)
+</td>
+</tr>
+<tr>
+<td>மறுசெயல்இமு</td>
+<td>ஐ386 / எஎம்டி64</td>
+<td>
+  மறுசெயல்இமு பயன்பாடுகள் மேலாளரிடமிருந்து நிறுவவும், அல்லது <br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxMEdit-3.2-win32-bin-ros.7z">சாஃபிதிருத்தி-3.2-சாளர32-bin-ros.7z</a> (9.64 மெபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxMEdit-3.2-win32-bin-ros.zip">சாஃபிதிருத்தி-3.2-சாளர32-bin-ros.zip</a> (15.7 மெபை)
+</td>
+</tr>
+<tr>
+<td>ஆர்ச் லினக்ச்</td>
+<td>எந்த</td>
+<td>
+  <a target="_blank" href="https://aur.archlinux.org/packages/wxmedit/">https://aur.archlinux.org/packages/wxmedit/</a><br/>
+  அல்லது <a target="_blank" href="https://github.com/archlinuxcn/repo">ஆர்ச்லினக்ச்சிஎன்</a> களஞ்சியம் ஃ86_64 இருமத்திற்கு,<br/>
+  <a target="_blank" href="https://github.com/arch4edu/arch4edu">ஆர்ச்4கல்வி</a> களஞ்சியம் ஃ86_64/ஆர்ச்64 இருமங்களுக்கு பயன்படுத்து
+</td>
+</tr>
+<tr>
+<td>டெபியன் 12 / எல்எம்டிஇ 6 /<br/> உபுண்டு 23.04 - 23.10</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_amd64-icu72.deb">சாஃபிதிருத்தி_3.2_amd64-ஐசியு72.deb</a> (1.18 மெபை)</td>
+</tr>
+<tr>
+<td>உபுண்டு 23.04 - 23.10</td>
+<td>riscv64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_riscv64-icu72.deb">சாஃபிதிருத்தி_3.2_riscv64-ஐசியு72.deb</a> (1.11 மெபை)</td>
+</tr>
+<tr>
+<td>டெபியன் 12 / எல்எம்டிஇ 6</td>
+<td>ஐ386</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_i386-icu72.deb">சாஃபிதிருத்தி_3.2_ஐ386-ஐசியு72.deb</a> (1.08 மெபை)</td>
+</tr>
+<tr>
+<td>ஆழமாகஉள் ப23</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_amd64-icu71.deb">சாஃபிதிருத்தி_3.2_amd64-ஐசியு71.deb</a> (1.17 மெபை)</td>
+</tr>
+<tr>
+<td>ஆழமாகஉள் ப23</td>
+<td>riscv64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_riscv64-icu71.deb">சாஃபிதிருத்தி_3.2_riscv64-ஐசியு71.deb</a> (1.11 மெபை)</td>
+</tr>
+<tr>
+<td>உபுண்டு 22.04 / லினச்சு புதினா 21</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_amd64-icu70.deb">சாஃபிதிருத்தி_3.2_amd64-ஐசியு70.deb</a> (1.20 மெபை)</td>
+</tr>
+<tr>
+<td>ஆழமாகஉள் ப20</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_amd64-deepin-icu70.deb">சாஃபிதிருத்தி_3.2_amd64-ஆழமாகஉள்-ஐசியு70.deb</a> (975 கிபை)</td>
+</tr>
+<tr>
+<td>டெபியன் 11 / எல்எம்டிஇ 5</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_amd64-icu67.deb">சாஃபிதிருத்தி_3.2_amd64-ஐசியு67.deb</a> (1.04 மெபை)</td>
+</tr>
+<tr>
+<td>உபுண்டு 20.04 /<br/> திறந்தகைலின் 1.0 /<br/> லினச்சு புதினா 20</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_amd64-icu66.deb">சாஃபிதிருத்தி_3.2_amd64-ஐசியு66.deb</a> (1.06 மெபை)</td>
+</tr>
+<tr>
+<td>உபுண்டு 20.04 <del>/<br/> திறந்தகைலின் 1.0</del></td>
+<td>riscv64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit_3.2_riscv64-icu66.deb">சாஃபிதிருத்தி_3.2_riscv64-ஐசியு66.deb</a> (1.00 மெபை)</td>
+</tr>
+<tr>
+<td>திறந்தசுசே டம்புள்களை</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.x86_64-suse-icu73.rpm">சாஃபிதிருத்தி-3.2-1.x86_64-suse-ஐசியு73.rpm</a> (13.0 மெபை)</td>
+</tr>
+<tr>
+<td>திறந்தசுசே டம்புள்களை</td>
+<td>riscv64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.riscv64-suse-icu73.rpm">சாஃபிதிருத்தி-3.2-1.riscv64-suse-ஐசியு73.rpm</a> (10.9 மெபை)</td>
+</tr>
+<tr>
+<td>திறந்தசுசே டம்புள்களை</td>
+<td>i586</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.i586-suse-icu73.rpm">சாஃபிதிருத்தி-3.2-1.i586-suse-ஐசியு73.rpm</a> (12.9 மெபை)</td>
+</tr>
+<tr>
+<tr>
+<td>திறந்தசுசே Leap 15</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.x86_64-suse-icu65.rpm">சாஃபிதிருத்தி-3.2-1.x86_64-suse-ஐசியு65.rpm</a> (9.15 மெபை)</td>
+</tr>
+<tr>
+<td>திறந்தமுகில்முஇ ஓடை 23</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.x86_64-icu73wx32.rpm">சாஃபிதிருத்தி-3.2-1.x86_64-ஐசியு73wx32.rpm</a> (1.23 மெபை)</td>
+</tr>
+<tr>
+<td>திறந்தயுலர் 23.09</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.x86_64-icu73.rpm">சாஃபிதிருத்தி-3.2-1.x86_64-ஐசியு73.rpm</a> (1.19 மெபை)</td>
+</tr>
+<tr>
+<td>திறந்தயுலர் 23.09</td>
+<td>riscv64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.riscv64-icu73.rpm">சாஃபிதிருத்தி-3.2-1.riscv64-ஐசியு73.rpm</a> (1.11 மெபை)</td>
+</tr>
+<tr>
+<td>திறந்தயுலர் 22.03 / பேடோரா 38</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.x86_64-icu72.rpm">சாஃபிதிருத்தி-3.2-1.x86_64-ஐசியு72.rpm</a> (1.19 மெபை)</td>
+</tr>
+<tr>
+<td>பேடோரா 38</td>
+<td>riscv64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.riscv64-icu72.rpm">சாஃபிதிருத்தி-3.2-1.riscv64-ஐசியு72.rpm</a> (1.11 மெபை)</td>
+</tr>
+<tr>
+<td>திறந்தயுலர் 22.03</td>
+<td>riscv64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.riscv64-icu69.rpm">சாஃபிதிருத்தி-3.2-1.riscv64-ஐசியு69.rpm</a> (1.11 மெபை)</td>
+</tr>
+<tr>
+<td>சிதொநிலி 9 /<br/> அல்மாலினச்சு 9 /<br/> ராக்கி லினக்ச் 9 போன்றவை.</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.x86_64-icu67.rpm">சாஃபிதிருத்தி-3.2-1.x86_64-ஐசியு67.rpm</a> (1.22 மெபை)</td>
+</tr>
+<tr>
+<td>திறந்தயுலர் 20.03</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.x86_64-icu62.rpm">சாஃபிதிருத்தி-3.2-1.x86_64-ஐசியு62.rpm</a> (1.14 மெபை)</td>
+</tr>
+<tr>
+<td>சிதொநிலி 8 /<br/> அனோலிச் முஇ 8 /<br/> திறந்தமுகில்முஇ 8 /<br/> அல்மாலினச்சு 8 /<br/> ராக்கி லினக்ச் 8 போன்றவை.</td>
+<td>எஎம்டி64</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-1.x86_64-icu60.rpm">சாஃபிதிருத்தி-3.2-1.x86_64-ஐசியு60.rpm</a> (1.24 மெபை)</td>
+</tr>
+<tr>
+<td>இலவசபிமெவி 12 - 14<br/>(2023கா3 / 2023கா4)</td>
+<td>எஎம்டி64</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-amd64-fb14-icu73.pkg">சாஃபிதிருத்தி-3.2-amd64-fb14-ஐசியு73.pkg</a> (993 கிபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-amd64-fb13-icu73.pkg">சாஃபிதிருத்தி-3.2-amd64-fb13-ஐசியு73.pkg</a> (993 கிபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-amd64-fb12-icu73.pkg">சாஃபிதிருத்தி-3.2-amd64-fb12-ஐசியு73.pkg</a> (993 கிபை)
+</td>
+</tr>
+<tr>
+<td>இலவசபிமெவி 13 - 14<br/>(2023கா3 / 2023கா4)</td>
+<td>riscv64</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-riscv64-fb14-icu73.pkg">சாஃபிதிருத்தி-3.2-riscv64-fb14-ஐசியு73.pkg</a> (942 கிபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-riscv64-fb13-icu73.pkg">சாஃபிதிருத்தி-3.2-riscv64-fb13-ஐசியு73.pkg</a> (942 கிபை)
+</td>
+</tr>
+<tr>
+<td>இலவசபிமெவி 12 - 14<br/>(2023கா3 / 2023கா4)</td>
+<td>ஐ386</td>
+<td>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-i386-fb14-icu73.pkg">சாஃபிதிருத்தி-3.2-ஐ386-fb14-ஐசியு73.pkg</a> (0.98 மெபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-i386-fb13-icu73.pkg">சாஃபிதிருத்தி-3.2-ஐ386-fb13-ஐசியு73.pkg</a> (0.98 மெபை)<br/>
+  <a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxmedit-3.2-i386-fb12-icu73.pkg">சாஃபிதிருத்தி-3.2-ஐ386-fb12-ஐசியு73.pkg</a> (0.98 மெபை)
+</td>
+</tr>
+<tr>
+<td>மேக்முஇ</td>
+<td>எந்த</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxMEdit-3.2.tar.gz">சாஃபிதிருத்தி-3.2.tar.gz</a> (3.04 மெபை)
+ மற்றும் <a target="_blank" href="https://github.com/wxMEdit/wxMEdit/issues/57#issuecomment-31417588"> இங்கே </a>பின்பற்றவும்</td>
+</tr>
+<tr>
+<td>மற்ற</td>
+<td>எந்த</td>
+<td><a target="_blank" href="http://downloads.sourceforge.net/project/wxmedit/3.2/wxMEdit-3.2.tar.gz">சாஃபிதிருத்தி-3.2.tar.gz</a> (3.04 மெபை)</td>
+</tr>
+</tbody>
+</table><h2>
+<a name="change-log" class="anchor" href="#change-log"><span class="octicon octicon-link"></span></a>மாற்றம் பதிவு</h2>
+
+<h3><a name="32" class="anchor" href="#32"><span class="octicon octicon-link"></span></a>3.2</h3><ol>
+<li> புதிய நற்பொருத்தம் சேர்க்கப்பட்டது: மனிதனால் படிக்கக்கூடிய வடிவத்தில் கோப்பு அளவைக் காட்டு.</li>
+<li> கோப்புகளைத் திறக்க குறிப்பிட்ட குறியாக்கத்தை எப்போதும் பயன்படுத்தும் விருப்பத்தைச் சேர்த்தது.</li>
+<li> சிடிகே+ 3 மற்றும் Wayland ஆதரவு சேர்க்கப்பட்டது.</li>
+<li> சாளரங்கள் கீழ் உயர் டிபிஐ ஆதரவு சேர்க்கப்பட்டது.</li>
+<li> செரோம் காச்பர் &lt;neon.king.fr[at]gmail.com&gt;படவுருக்களை மறுவடிவமைப்பு செய்தார்.</li>
+<li> சில விசைப்பலகை குறுக்குவழிகள் மாறியது,  <a target="_blank" href="https://github.com/wxMEdit/wxMEdit/wiki/Keyboard-shortcuts-change-in-wxMEdit-3.2"> சாஃபிதிருத்தி 3.2 இல் விசைப்பலகை குறுக்குவழிகள்</a> மாற்றத்தைப் பார்.</li>
+<li> சிபி18030 ஆதரவு சிபி18030-2022 தரநிலைக்கு புதுப்பிக்கப்பட்டது.</li>
+<li> ஒருங்குறி 15.0 க்கான ஒருங்குறி தொகுதி விளக்கங்கள் புதுப்பிக்கப்பட்டது (ஐசியு 72 அல்லது அதற்கு மேல் தேவை).</li>
+<li> ஒரு வரி வரி நீளத்தின் வரம்பை மீறும் போது உரை பயன்முறையில் செயலிழப்பு சரி செய்யப்பட்டது.</li>
+<li> ."சாஃபிதிருத்தி பற்றி" உரையாடலில் சரி பொத்தானை அழுத்தும்போது சரிந்த செயலிழப்பு சரி செய்யப்பட்டது.</li>
+<li>சில தாவல் எழுத்துக்களைக் கொண்ட உரையுடன் சாளரத்தின் மூலம் மடிக்கும் போது பதிலளிக்காதது சரி செய்யப்பட்டது.</li>
+<li>சாஃபிதிருத்தி 3.1 இல் உடைந்த மூன்று சொடுக்கு நடத்தை சரி செய்யப்பட்டது.</li>
+<li>பித்துதிருத்தி/சாஃபிதிருத்தியில் உள்ள தகவல் சாளரத்தின் உயரம் (சாஃMSW-2.8 உடன் கட்டப்பட்டது) எப்போதும் 4 ஆல் குறைக்கப்படுகிறது சரி செய்யப்பட்டது.</li>
+<li>எழுத்துருக்கள் மற்றும் குறியாக்கங்கள் மறுதொடக்கம் செய்யப்பட்ட பிறகு மீட்டமைக்கப்படவில்லை சரி செய்யப்பட்டது.</li>
+<li>மாற்றுகிர் விசையின் மூலம் எழுத்துக்களைத் தட்டச்சு செய்ய முடியாத நிலை சரி செய்யப்பட்டது.</li>
+<li>லினக்சின் கீழ் நிலைகாட்டி மற்றும் தேர்வு வழங்குதல்  சரி செய்யப்பட்டது.</li>
+<li>ஐஎம்இ வேட்பாளர் சாளரம் சாளரங்கள் 10 இன் கீழ் கேரட்டைப் பின்தொடரவில்லை என்பது சரி செய்யப்பட்டது.</li>
+<li>செரோம் காச்பர்  &lt;neon.king.fr[at]gmail.com&gt; பிரெஞ்சு மொழிபெயர்ப்பைச் சேர்த்தார்.</li>
+<li>எளிமைப்படுத்தப்பட்ட சீன மொழிபெயர்ப்பு மேம்படுத்தப்பட்டது.</li>
+<li>பிற சிறிய மாற்றங்கள் மற்றும் பிழை திருத்தங்கள்.</li>
+</ol>
+
+<h3><a name="31" class="anchor" href="#31"><span class="octicon octicon-link"></span></a>3.1</h3>
+<ol>
+<li> புதிய கொலையாளி நற்பொருத்தத்தைச் சேர்த்தது: சீன/சப்பானிய/தாய்/லாவோ/கெமர் மற்றும் பர்மிய எழுத்துக்களுடன் சொல் எல்லை.</li>
+<li> ஒரு புதிய கொலையாளி நற்பொருத்தத்தைச் சேர்த்தது: சொல் மடக்கு காணுங்கள் ஒருங்குறி® நிலையான இணைப்பு #14: ஒருங்குறி வரி உடைக்கும் வழிமுறை.</li>
+<li> புதிய நற்பொருத்தம் சேர்க்கப்பட்டது: நெடுவரிசை சீரமை.</li>
+<li> ஒழுங்கு செய்யப்பட்ட வரிசையைச் செருகுவதற்கான கருவிப்பட்டி படவுரு &amp; குறுக்குவழி சேர்க்கப்பட்டது.</li>
+<li> வரி-முடிவு குறி வடிவங்களை மாற்றியது.</li>
+<li>  ஒருங்குறி 8.0 க்கான ஒருங்குறி தொகுதி விளக்கங்கள் புதுப்பிக்கப்பட்டது (ஐசியு 56 அல்லது அதற்கு மேல் தேவை).</li>
+<li> ஆங்கிலம் அல்லாத எழுத்துகளுடன் சொல்லைத் தேர்ந்தெடுக்கும்பொழுது தவறான சொல் எல்லை சரி செய்யப்பட்டது.</li>
+<li> ஆங்கிலம் அல்லாத எழுத்துக்களுடன் தவறான சொல் மடக்கு சரி செய்யப்பட்டது.</li>
+<li> சாஃநிரல்பலகைகள்-3.0 GTK2 உடன் கட்டமைக்கப்பட்ட சாஃபிதிருத்தியில் எணட்டையுடன் நிலையான உடைந்த எழுத்துகள் உள்ளீடு.</li>
+<li>கட்டுபாடு-பின்வெளி ஒரு உரை கோப்பின் தொடக்கத்தில் அல்லது நெடுவரிசை பயன்முறையில் சுழிய அகலத் தேர்வில் அழுத்தும் போது தவறான நடத்தை சரி செய்யப்பட்டது.</li>
+<li>இருமுறை சொடுக்கினால் வெவ்வேறு வரிகளில் மூடப்பட்ட முழு சொற்களையும் தேர்ந்தெடுக்க முடியாது என்பது சரி செய்யப்பட்டது.</li>
+<li>மூன்று சொடுக்கினால் மூடப்பட்ட வரியை தேர்ந்தெடுக்க முடியாது என்பது சரி செய்யப்பட்டது.</li>
+<li>மறுதொடக்கம் &amp; மீட்டமைத்த பிறகு கோப்புகள் பதினென்ம பயன்முறையில் வைக்கப்படாது என்பது சரி செய்யப்பட்டது.  </li>
+<li>வழக்கமான உரை பயன்முறையில் நகலெடுக்கும் போது நிலையான புதிய வரி பணிநீக்கம்.</li>
+<li>டில்ட் &lt;tiltstr[at]gmail.com&gt; மூலம் சப்பானிய மொழிபெயர்ப்பு புதுப்பிக்கப்பட்டது.</li>
+<li>கார்லோச் சான்செச் &lt;carlos1994sanchez[at]gmail.com&gt;இன் ச்பானிச் மொழிபெயர்ப்பு புதுப்பிக்கப்பட்டது..</li>
+<li>மேம்படுத்தப்பட்ட எளிமைப்படுத்தப்பட்ட சீன மொழிபெயர்ப்பு.</li>
+<li>வின்சென்ட்_டிடபள்யு இன் பாரம்பரிய சீன மொழிபெயர்ப்பு புதுப்பிக்கப்பட்டது..</li>
+<li>Будинов Станислав &lt;stabud[at]yandex.ru&gt;இன் ரச்ய மொழிபெயர்ப்பு புதுப்பிக்கப்பட்டது.</li>
+<li>பிற சிறிய மாற்றங்கள் மற்றும் பிழை திருத்தங்கள்.</li>
+</ol>
+
+<h3><a name="30" class="anchor" href="#30"><span class="octicon octicon-link"></span></a>3.0</h3>
+<ol>
+<li> வரி எண்ணைப் பொருட்படுத்தாமல் புத்தககுறிகைக் காண்பிக்க/அச்சிட புதிய விருப்பங்களைச் சேர்த்தது.</li>
+<li> வழக்கமான வெளிப்பாட்டில் புதிய வரியுடன் பொருந்தக்கூடிய புள்ளியை இயக்க வேண்டுமா என்ற விருப்பத்தைச் சேர்த்தது.</li>
+<li> தேடல்/மாற்று உரையாடல் கண்ணுக்குத் தெரியாத நிலையில், நிலைப் பட்டியில் தேடும் செய்தியைக் காட்டும் நற்பொருத்தத்தைச் சேர்த்தது.</li>
+<li> ஒரு நற்பொருத்தத்தைச் சேர்த்தது: வரிசைப்படுத்தப்பட்ட வரிசையைச் செருகவும்.</li>
+<li> காட்சிப்படுத்துவதற்கும் அச்சிடுவதற்கும் மேம்படுத்தப்பட்ட புத்தககுறி தோற்றம்.</li>
+<li> மேம்படுத்தப்பட்ட தாவல் மற்றும் கோமு குறி வடிவம், தாவல் குறியை இடைவெளி குறியில் இருந்து வேறுபடுத்துவதை எளிதாக்குகிறது.</li>
+<li> குறிப்பிட்ட வார்த்தை மடக்கு அமைப்புகளுடன் ஒரு வரியில் மிகக் குறைவான எழுத்துக்கள் மட்டுமே உள்ளன என்பது சரி செய்யப்பட்டது.</li>
+<li> தொடரியல் தனிப்படுத்தல் அமைப்புகள் உரையாடலில் உள்ள பட்டியல் உருப்படிகளின் அகலம் மறுஅளவாக்கத்தில் புதுப்பிக்கப்படவில்லை என்பது சரி செய்யப்பட்டது.</li>
+<li> எந்த சுழிய-நீள வலியுறுத்தல்களையும் எண்ணும் போது/மாற்றியமைக்கும்போது பதிலளிப்பதில்லை என்பது சரி செய்யப்பட்டது.</li>
+<li>ஒருங்குறி 7.0 க்கான ஒருங்குறி தொகுதி விளக்கங்கள் புதுப்பிக்கப்பட்டது (ஐசியு 54 அல்லது அதற்கு மேல் தேவை).</li>
+<li>ரோனி ச்டெய்னர் &lt;post[at]sirsteiner.de&gt; மூலம் செர்மன் மொழிபெயர்ப்பு சேர்க்கப்பட்டது.</li>
+<li>அடம் மாச்சாலச்கி &lt;massaada[at]wp.pl&gt;மூலம் போலிச் மொழிபெயர்ப்பு சேர்க்கப்பட்டது.</li>
+<li>மேம்படுத்தப்பட்ட எளிமைப்படுத்தப்பட்ட சீன மொழிபெயர்ப்பு.</li>
+<li>டில்ட் &lt;tiltstr[at]gmail.com&gt; மூலம் ஜப்பானிய மொழிபெயர்ப்பு புதுப்பிக்கப்பட்டது.</li>
+<li>கார்லோச் சான்செச் &lt;carlos1994sanchez[at]gmail.com&gt;இன் ச்பானிச் மொழிபெயர்ப்பு புதுப்பிக்கப்பட்டது.</li>
+<li>பிற சிறிய மாற்றங்கள் மற்றும் பிழை திருத்தங்கள்.</li>
+</ol>
+
+<p>மேலும் மாற்றங்களுக்கு <a target="_blank" href="https://github.com/wxMEdit/wxMEdit/blob/master/ChangeLog">மற்றப்பதிவைப்</a>  பார்.</p>
+
+<h2>
+<a name="other-downloads" class="anchor" href="#other-downloads"><span class="octicon octicon-link"></span></a>மற்ற பதிவிறக்கங்கள்</h2>
+
+<p><a target="_blank" href="http://sourceforge.net/projects/wxmedit/files/">மூலம்உலை</a> இல் கூடுதல் வெளியீடுகள் மற்றும் பிற கோப்புகள்.</p>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53.1.0.9081-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

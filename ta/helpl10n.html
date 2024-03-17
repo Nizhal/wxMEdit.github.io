@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- vim: set sw=2 ts=2 sts=2 et: -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <script type="text/javascript">
+      if (location.search) {
+        var s = location.search;
+        var l = s.substr(1);
+        if (l.substr(0, 3) == 'hl=')
+          l = l.substr(3);
+        if (l.match(/^es_[A-Z][A-Z]/))
+          l = 'es';
+        var l10n = {'zh_CN':'zh_CN', 'zh_SG':'zh_CN', 'zh':'zh_CN', 'zh_TW':'zh_CN', 'zh_HK':'zh_CN', 
+                    'zh_MO':'zh_CN', 'ja_JP':'', 'ja':'', 'es':'', 'ta':'', }[l] || '';
+        location = l10n + location.pathname + location.hash;
+      }
+    </script>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/architectsdaughter.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="../javascripts/html5.js"></script>
+    <![endif]-->
+
+    <style>
+      ol { margin-left: 10pt; }
+    </style>
+    <title>சாஃபிதிருத்தி -ஒரு குறுக்கு மேடை உரை/பதினறுமஎண் திருத்தி</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="inner">
+        <h1>சாஃபிதிருத்தி</h1>
+        <h2>உள்ளூராக்கல் உதவி</h2>
+        <a target="_blank" href="https://அறிவலிமையம்.com/hltj" class="button">அறிவிலி<small>மையத்தில் என்னை பின் தொடருங்கள்</small></a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <aside id="sidebar">
+          <h2><a href="./index.html">வீடு</a></h2>
+          <h2><a href="downloads.html">பதிவிறக்கங்கள்</a></h2>
+          <h2><a href="credits.html">கடன்கள்</a></h2>
+          <h2><a target="_blank" href="https://github.com/wxMEdit/wxMEdit/wiki">ஆவணம்</a></h2>
+          <h2><a target="_blank" href="https://github.com/wxMEdit/wxMEdit">குறியீடு</a></h2>
+          <h2><a target="_blank" href="https://github.com/wxMEdit/wxMEdit/issues">ஆதரவு</a></h2>
+        </aside>
+
+        <section id="main-content">
+          <h2>
+<a name="addupdate-translation" class="anchor" href="#addupdate-translation"><span class="octicon octicon-link"></span></a>மொழிபெயர்ப்பைச் சேர்/புதுப்பி</h2>
+
+<p>மொழிபெயர்ப்புக்கு உதவ விரும்பினால், தயவுசெய்து எனக்கு மின்னஞ்சல் அனுப்பவும் (சியான்வி &lt;<a href="mailto:wxmedit@gmail.com">சாஃபிதிருத்தி@சிஅஞ்சல்.வணி</a>&gt; இலக்கு மொழி.
+புதிய மொழிபெயர்ப்பைச் சேர்க்க அல்லது இருக்கும் மொழிபெயர்ப்பைப் புதுப்பிக்க இரண்டு வழிகள் உள்ளன:</p>
+
+<ol>
+<li>
+<strong>பிரிநகல் இல்லாமல்:</strong>
+
+<ol>
+<li>.po கோப்பை மொழிபெயர்க்கவும்:
+
+<ul>
+<li>பதிவிறக்கு <code>https://raw.githubusercontent.com/hltj/wxMEdit/master/po/wxmedit.pot</code>.</li>
+<li>கோப்பை இலக்கு மொழிக்கு மாற்றி, அதை <code>ll_CC.po</code> என மறுபெயரிடவும் (எ.கா. <code>zh_CN.po</code>, <code>it_IT.po</code>, <code> >ja_JP.po</code>, <code>ta.po</code>, etc.); அல்லது கோப்பை <code>ll_CC.po</code> புதுப்பிக்கவும்.</li>
+</ul>
+</li>
+<li>ஆவணம் கோப்புகளை மொழிபெயர்க்கவும்:
+
+<ul>
+<li>ஆவணம் களஞ்சியத்தை நகல் செய்யவும் <code>https://github.com/wxMEdit/wxMEdit.wiki.git</code>.</li>
+<li>குறைகுறி ஆவண கோப்புகளை இலக்கு மொழிக்கு மொழிபெயர்க்கவும் <code>வீடு.md</code> &amp; <code>பதிவிறக்கங்கள்.md</code> மற்றும் <code>வீடு_ll_CC.md</code> &amp; <code>பதிவிறக்கங்கள்_ll_CC.md</code> என மறுபெயரிடவும்; அல்லது ஆவண கோப்புகளை <code>வீடு_ll_CC.md</code> &amp; <code>பதிவிறக்கங்கள்_ll_CC.md</code>புதுப்பிக்கவும் .</li>
+</ul>
+</li>
+<li>மொழிபெயர்க்கப்பட்ட கோப்புகளை எனக்கு அனுப்பு (சியான்வி &lt;<a href="mailto:wxmedit@gmail.com">சாஃபிதிருத்தி மின்னஞ்சல்</a>&gt;).</li>
+</ol>
+</li>
+<li>
+<strong>பிரிநகலுடன்:</strong>
+
+<ol>
+<li>அறிவலிமையத்தில் சாஃபிதிருத்தியை  பிரிநகல் எடு.</li>
+<li>மேலே உள்ளவாறு மொழிபெயர்க்கப்பட்ட .po கோப்பு மற்றும் ஆவணம் கோப்புகளைச் சேர்/புதுப்பி.</li>
+<li>இழுக்கும் கோரிக்கையை உருவாக்கு.</li>
+</ol>
+</li>
+</ol><p>உங்கள் மொழிபெயர்ப்புக்கு நன்றி. <a href="credits.html">கடன்களில்</a> உங்கள் பெயர்/நிக்கைச் சேர்ப்பேன். மேலும் நீங்கள் உங்கள் இணையதளம்/வலைப்பதிவு முகவரியையும் எனக்குத் தரலாம், உங்கள் மொழிமாற்றம் செய்யப்பட்ட பக்கங்கள் மற்றும் கடன்கள் பக்கங்களுக்கான இணைப்பை நான் எல்லா மொழிகளிலும் சேர்ப்பேன்.</p>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53914281-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
